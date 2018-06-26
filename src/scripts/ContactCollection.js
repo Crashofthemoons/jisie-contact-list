@@ -2,7 +2,7 @@ const $ = require("jquery")
 
 const contactCollection = Object.create({}, {
   "postContact": {
-    value: function(name, phone, address) {
+    value: function(name, phone, address) { //posts a new contact to the json database with input field values
       return $.ajax({
         url: "http://localhost:3000/contacts",
         method: "POST",
@@ -16,10 +16,10 @@ const contactCollection = Object.create({}, {
   },
   "getContacts": {
     value: function() {
-      return $.ajax("http://localhost:3000/contacts")
+      return $.ajax("http://localhost:3000/contacts") //gets the current list of contacts in the json database
     }
   },
-  "deleteContact": {
+  "deleteContact": { //deletes a contact based on their unique id
     value: function(id){
       return $.ajax({
         url: `http://localhost:3000/contacts/${id}`,

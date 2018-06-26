@@ -3,19 +3,19 @@ const $ = require("jquery")
 const contactCollectionModule = require("./ContactCollection")
 const contactListModule = require("./ContactList")
 
-const addNewContact = () => {
+const addNewContact = () => { //creates a new contact with the input field values
   const newContactName = $(".name-form-field").val()
   const newContactPhone = $(".phone-form-field").val()
   const newContactAddr = $(".addr-form-field").val()
   console.log("add button clicked", newContactName, newContactPhone, newContactAddr);
-  contactCollectionModule.postContact(newContactName, newContactPhone, newContactAddr)
+  contactCollectionModule.postContact(newContactName, newContactPhone, newContactAddr) //puts new contact in the json file
   .then((response) => {
     console.log("response", response)
-    contactListModule.buildContactList()
+    contactListModule.buildContactList() //calls on buildContactList which adds the new contact to the DOM from the updated json file
   })
 }
 
-const contactForm = Object.create({}, {
+const contactForm = Object.create({}, { //creates the input fields and submit button and appends to the dom
   buildContactForm: {
     value: function() {
       const formArticle = document.createElement("article")
