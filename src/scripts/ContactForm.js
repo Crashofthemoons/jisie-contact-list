@@ -19,6 +19,7 @@ const contactForm = Object.create({}, { //creates the input fields and submit bu
   buildContactForm: {
     value: function() {
       const formArticle = document.createElement("article")
+      formArticle.id = "form-article"
 
       const nameSection = document.createElement("section")
 
