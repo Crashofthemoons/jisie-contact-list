@@ -32,8 +32,8 @@ const contactCollection = Object.create({}, {
       return $.ajax(`http://localhost:3000/contacts/${id}`)
     }
   },
-  "putContacts": {
-    value: function(id, name, phone, address) {
+  "putContact": {
+    value: function(id, name, phone, address){
       return $.ajax({
         url: `http://localhost:3000/contacts/${id}`,
         method: "PUT",
