@@ -1,3 +1,28 @@
 {
-  "contacts": []
+  "contacts": [
+    {
+      "name": "Brett",
+      "phone": "615-982-0012",
+      "address": "954 Hawkins Rd",
+      "id": 1
+    },
+    {
+      "name": "Jenn",
+      "phone": "615-479-8067",
+      "address": "1516 Elm Run Ct",
+      "id": 2
+    },
+    {
+      "name": "Jacob",
+      "phone": "615-961-5711",
+      "address": "100 Fire Tower Rd",
+      "id": 3
+    },
+    {
+      "name": "Shu",
+      "phone": "615-542-6964",
+      "address": "132 Brian Cir",
+      "id": 4
+    }
+  ]
 }
