@@ -1,0 +1,19 @@
+/* TODO */
+/* Modularize style sheets */
+@import 'button.css';
+@import 'form.css';
+@import 'card.css';
+/* Import the other style sheets */
+/* Declare variables for card background, button background, border-radius at the root */
+
+:root {
+    --main-color: #ebecf2;
+    --border-radius: 1em;
+    --secondary-color:  #b0b3cc;
+    --tertiary-color: #292c40;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+  color: var(--tertiary-color);
+}

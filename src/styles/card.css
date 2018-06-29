@@ -1,0 +1,10 @@
+
+/* ----------- CARDS STYLES -----------  */
+.list-contacts-article section{
+  border: 1px solid #003366;
+  width: 20rem;
+  height: 13rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--main-color);
+}
